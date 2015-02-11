@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:bpint="http://www.sigma.fr/jahia/nt/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:jnt="http://www.jahia.org/jahia/nt/1.0" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:commix="http://www.jahia.com/jahia/mix/1.0" xmlns:bpimix="http://www.sigma.fr/jahia/mix/1.0" xmlns:jmix="http://www.jahia.org/jahia/mix/1.0" xmlns:bpi="http://www.sigma.fr/bpi" xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:rep="internal">
+  <templateSets jcr:primaryType="jnt:templateSets">
+    <module-bpi-template j:dependencies="default module-bpi-maincontent module-bpi-outils" j:installedModules="module-bpi-template" j:originWS="default" j:siteType="templatesSet" j:title="Module BPI Template" j:wcagCompliance="true" jcr:primaryType="jnt:virtualsite">
+      <portlets j:originWS="default" jcr:primaryType="jnt:portletFolder" />
+      <files j:originWS="default" jcr:primaryType="jnt:folder" />
+      <contents j:originWS="default" jcr:primaryType="jnt:contentFolder" />
+      <templates j:originWS="default" jcr:primaryType="jnt:templatesFolder">
+        <base j:originWS="default" j:theme="" j:view="module-bpi-template" jcr:mixinTypes="jmix:theme" jcr:primaryType="jnt:template">
+          <home j:originWS="default" jcr:primaryType="jnt:pageTemplate" />
+          <simple j:originWS="default" jcr:primaryType="jnt:pageTemplate" />
+          <zone_x0020_recherche j:originWS="default" jcr:primaryType="jnt:contentList">
+            <recherche j:originWS="default" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="bpi:moduleRecherche" result="/templateSets/module-bpi-template/home">
+              <j:acl j:inherit="true" jcr:primaryType="jnt:acl" />
+              <j:translation_fr jcr:language="fr" jcr:primaryType="jnt:translation" jcr:title="recherche" />
+            </recherche>
+          </zone_x0020_recherche>
+          <zoneChoixLangue j:originWS="default" jcr:primaryType="jnt:contentList">
+            <language-switcher j:originWS="default" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="jnt:languageSwitcher" typeOfDisplay="isoLocaleCountryCode">
+              <j:acl j:inherit="true" jcr:primaryType="jnt:acl" />
+            </language-switcher>
+          </zoneChoixLangue>
+          <nav j:originWS="default" jcr:primaryType="jnt:contentList">
+            <menu j:baselineNode="home" j:maxDepth="2" j:menuItemView="menuElement" j:originWS="default" j:startLevel="0" j:styleName="navigation" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="jnt:navMenu">
+              <j:acl j:inherit="true" jcr:primaryType="jnt:acl" />
+              <j:translation_fr jcr:language="fr" jcr:primaryType="jnt:translation" />
+            </menu>
+            <breadcrumb displayCurrentPage="true" displayHome="true" displayLinkOnCurrentPage="false" displayOnFirstLevel="false" j:originWS="default" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="jnt:pageBreadcrumb">
+              <j:acl j:inherit="true" jcr:primaryType="jnt:acl" />
+            </breadcrumb>
+          </nav>
+        </base>
+        <content-template j:applyOn="jnt:content" j:hiddenTemplate="true" j:originWS="default" j:priority="1" j:view="module-bpi-template" jcr:primaryType="jnt:contentTemplate" />
+      </templates>
+      <home j:isHomePage="true" j:originWS="default" j:templateNode="/templateSets/module-bpi-template/templates/base/home" jcr:primaryType="jnt:page" />
+    </module-bpi-template>
+  </templateSets>
+</content>
+

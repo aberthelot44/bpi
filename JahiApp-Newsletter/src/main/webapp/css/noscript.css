@@ -1,0 +1,40 @@
+@CHARSET "ISO-8859-1";
+
+/*********************** Styles actifs lorsque javascript n'est pas activé ***********************/
+
+.carousel-inner > .item {
+	display: block;
+	border-bottom: 1px solid #9C9C9C;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+.vue-slider .vue-bloc {
+	height: auto;
+}
+
+.carousel-indicators {
+	display: none;
+}
+
+#bloc-menu ul.level_1 li li a:focus {
+	/*margin-left:1000em;*/ 
+	margin-left: 10000px;
+	left: 0;
+	/*width:10em;*/ 
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.navbar .navbar-nav li ul li a:focus {
+	position: absolute;
+	display: block;
+	background-color: #ffffff !important;
+	left: 10000px;
+	margin-left: 20px;
+
+	min-width: 70px;
+	text-align: left;
+	z-index: 9999999;
+}
+	

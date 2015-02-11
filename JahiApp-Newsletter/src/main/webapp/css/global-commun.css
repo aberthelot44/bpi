@@ -1,0 +1,105 @@
+/* styles communs aux sites et à ckeditor */
+.bodywrapper h1,
+.bodywrapper h1 a,
+.bodywrapper .N1,
+.bodywrapper .N1 a {
+    font-family: "DINBold";
+	font-size: 21px;	/* taille demandée */
+	line-height: 23px;
+	color: rgba(0, 0, 0, 1);
+	font-weight: normal;
+	/*text-transform: none;*/
+}
+
+.bodywrapper h2,
+.bodywrapper h2 a,
+.bodywrapper .N2,
+.bodywrapper .N2 a {
+    font-family: "DINRegular";
+	font-size: 21.4px;	/* taille demandée + 0.4 */
+	line-height: 23.4px;
+	color: rgba(0, 0, 0, 1);
+	font-weight: normal;
+	/*text-transform: none;*/
+}
+
+.bodywrapper .N3,
+.bodywrapper .N3 a {
+    font-family: "DINRegular";
+	font-size: 12.4px;	/* taille demandée + 0.4 */
+	line-height: 14.4px;
+	color: rgba(0, 65, 127, 1);
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.bodywrapper .N4,
+.bodywrapper .N4 a {
+    font-family: "DINBold";
+	font-size: 12.4px;	/* taille demandée + 0.4 */
+	line-height: 14.4px;
+	color: rgba(0, 65, 127, 1);
+	font-weight: normal;
+	/*text-transform: none;*/
+}
+
+.bodywrapper .N5,
+.bodywrapper .N5 a {
+    font-family: "DINBold";
+	font-size: 12.4px;	/* taille demandée + 0.4 */
+	line-height: 14.4px;
+	color: rgba(0, 0, 0, 1);
+	font-weight: normal;
+	/*text-transform: none;*/
+}
+
+.bodywrapper .N6,
+.bodywrapper .N6 a {
+    font-family: "DINRegular";
+	font-size: 12.4px;	/* taille demandée + 0.4 */
+	line-height: 14.4px;
+	color: rgba(0, 65, 127, 1);
+	font-weight: normal;
+	/*text-transform: none;*/
+}
+
+.bodywrapper,
+.bodywrapper .N7,
+.bodywrapper .N7 a {
+    font-family: "DINRegular";
+	font-size: 12.4px; 	/* taille demandée + 0.4 */
+	line-height: 14.4px;
+	color: rgba(0, 0, 0, 1);
+	font-weight: normal;
+	/*text-transform: none;*/
+}
+
+.bodywrapper .N8,
+.bodywrapper .N8 a {
+    font-family: "DINRegular";
+	font-size: 10.4px;	/* taille demandée + 0.4 */
+	/*line-height: 11.9px;*/
+	line-height: 13px;
+	color: rgba(0, 0, 0, 1);
+	font-weight: normal;
+	/*text-transform: none;*/
+}
+
+
+.bodywrapper .floatleft img, 
+.bodywrapper img.floatleft {
+    margin: 10px 10px 10px 0;	
+} 
+
+.bodywrapper .floatright img, 
+.bodywrapper img.floatright {
+    margin: 10px 0 10px 10px;	
+} 
+
+.bodywrapper .floatleft img + figcaption, 
+.bodywrapper img.floatleft + figcaption,
+.bodywrapper .floatright img + figcaption, 
+.bodywrapper img.floatright + figcaption {
+	margin-top: -10px;
+}
+

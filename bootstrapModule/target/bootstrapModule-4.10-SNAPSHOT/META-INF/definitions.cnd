@@ -1,0 +1,13 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<bpi = 'http://www.sigma.fr/bpi'>
+
+[bpi:bootstrapModuleContent] > jmix:droppableContent mixin
+
+[bpi:bootstrapRow] > jnt:content, jmix:layoutComponentContent, bpi:bootstrapModuleContent
+ - divID (string) indexed=no
+ - divClass (string) indexed=no
+ - divClassParColonne (string) indexed=no
+ - bootstrapColumn (string) indexed=no
+ - colNames (string) indexed=no
+ + * (nt:base) = nt:base version

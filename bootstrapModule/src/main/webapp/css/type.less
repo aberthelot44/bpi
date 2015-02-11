@@ -1,0 +1,232 @@
+// Typography.less
+// Headings, body text, lists, code, and more for a versatile and durable typography system
+// ----------------------------------------------------------------------------------------
+
+
+// BODY TEXT
+// ---------
+
+.bodywrapper p {
+  margin: 0 0 @baseLineHeight / 2;
+  small {
+    font-size: @baseFontSize - 2;
+    color: @grayLight;
+  }
+}
+.bodywrapper .lead {
+  margin-bottom: @baseLineHeight;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: @baseLineHeight * 1.5;
+}
+
+// HEADINGS
+// --------
+
+.bodywrapper h1, .bodywrapper h2, .bodywrapper h3, .bodywrapper h4, .bodywrapper h5, .bodywrapper h6 {
+  margin: 0;
+  font-family: @headingsFontFamily;
+  font-weight: @headingsFontWeight;
+  color: @headingsColor;
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
+  small {
+    font-weight: normal;
+    color: @grayLight;
+  }
+}
+.bodywrapper h1 {
+  font-size: 30px;
+  line-height: @baseLineHeight * 2;
+  small {
+    font-size: 18px;
+  }
+}
+.bodywrapper h2 {
+  font-size: 24px;
+  line-height: @baseLineHeight * 2;
+  small {
+    font-size: 18px;
+  }
+}
+.bodywrapper h3 {
+  font-size: 18px;
+  line-height: @baseLineHeight * 1.5;
+  small {
+    font-size: 14px;
+  }
+}
+.bodywrapper h4, .bodywrapper h5, .bodywrapper h6 {
+  line-height: @baseLineHeight;
+}
+.bodywrapper h4 {
+  font-size: 14px;
+  small {
+    font-size: 12px;
+  }
+}
+.bodywrapper h5 {
+  font-size: 12px;
+}
+.bodywrapper h6 {
+  font-size: 11px;
+  color: @grayLight;
+  text-transform: uppercase;
+}
+
+// Page header
+.bodywrapper .page-header {
+  padding-bottom: @baseLineHeight - 1;
+  margin: @baseLineHeight 0;
+  border-bottom: 1px solid @grayLighter;
+}
+.bodywrapper .page-header h1 {
+  line-height: 1;
+}
+
+
+
+// LISTS
+// -----
+
+// Unordered and Ordered lists
+.bodywrapper ul, .bodywrapper ol {
+  padding: 0;
+  margin: 0 0 @baseLineHeight / 2 25px;
+}
+.bodywrapper ul ul,
+.bodywrapper ul ol,
+.bodywrapper ol ol,
+.bodywrapper ol ul {
+  margin-bottom: 0;
+}
+.bodywrapper ul {
+  list-style: disc;
+}
+.bodywrapper ol {
+  list-style: decimal;
+}
+.bodywrapper li {
+  line-height: @baseLineHeight;
+}
+.bodywrapper ul.unstyled,
+.bodywrapper ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+// Description Lists
+.bodywrapper dl {
+  margin-bottom: @baseLineHeight;
+}
+.bodywrapper dt,
+.bodywrapper dd {
+  line-height: @baseLineHeight;
+}
+.bodywrapper dt {
+  font-weight: bold;
+  line-height: @baseLineHeight - 1; // fix jank Helvetica Neue font bug
+}
+.bodywrapper dd {
+  margin-left: @baseLineHeight / 2;
+}
+// Horizontal layout (like forms)
+.bodywrapper .dl-horizontal {
+  dt {
+    float: left;
+    width: 120px;
+    clear: left;
+    text-align: right;
+    .text-overflow();
+  }
+  dd {
+    margin-left: 130px;
+  }
+}
+
+// MISC
+// ----
+
+// Horizontal rules
+.bodywrapper hr {
+  margin: @baseLineHeight 0;
+  border: 0;
+  border-top: 1px solid @hrBorder;
+  border-bottom: 1px solid @white;
+}
+
+// Emphasis
+.bodywrapper strong {
+  font-weight: bold;
+}
+.bodywrapper em {
+  font-style: italic;
+}
+.bodywrapper .muted {
+  color: @grayLight;
+}
+
+// Abbreviations and acronyms
+.bodywrapper abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted @grayLight;
+}
+.bodywrapper abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+// Blockquotes
+.bodywrapper blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 @baseLineHeight;
+  border-left: 5px solid @grayLighter;
+  p {
+    margin-bottom: 0;
+    #font > .shorthand(16px,300,@baseLineHeight * 1.25);
+  }
+  small {
+    display: block;
+    line-height: @baseLineHeight;
+    color: @grayLight;
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+
+  // Float right with text-align: right
+  &.pull-right {
+    float: right;
+    padding-right: 15px;
+    padding-left: 0;
+    border-right: 5px solid @grayLighter;
+    border-left: 0;
+    p,
+    small {
+      text-align: right;
+    }
+  }
+}
+
+// Quotes
+.bodywrapper q:before,
+.bodywrapper q:after,
+.bodywrapper blockquote:before,
+.bodywrapper blockquote:after {
+  content: "";
+}
+
+// Addresses
+.bodywrapper address {
+  display: block;
+  margin-bottom: @baseLineHeight;
+  font-style: normal;
+  line-height: @baseLineHeight;
+}
+
+// Misc
+.bodywrapper small {
+  font-size: 100%;
+}
+.bodywrapper cite {
+  font-style: normal;
+}

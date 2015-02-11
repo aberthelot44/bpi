@@ -1,0 +1,150 @@
+@CHARSET "ISO-8859-1";
+
+/*********************** Styles relatifs au site Institutionnel ***********************/
+
+.bodywrapper .urgent .N1, .bodywrapper .urgent .N1 a,
+.bodywrapper .urgent .N2, .bodywrapper .urgent .N2 a,
+.bodywrapper .urgent .N3, .bodywrapper .urgent .N3 a,
+.bodywrapper .urgent .N4, .bodywrapper .urgent .N4 a,
+.bodywrapper .urgent .N5, .bodywrapper .urgent .N5 a,
+.bodywrapper .urgent .N6, .bodywrapper .urgent .N6 a,
+.bodywrapper .urgent .N7, .bodywrapper .urgent .N7 a,
+.bodywrapper .urgent .N8, .bodywrapper .urgent .N8 a {
+	color: #E2001A;
+}
+
+.bodywrapper .chapeau {
+	color: #00417f;
+}
+
+.bodywrapper a:hover {
+	color: #E2001A !important;
+}
+
+#bouton-menu-responsive {
+	border-color: #e2001a;
+}
+
+#bouton-menu-responsive .icon-bar {
+	background-color: #e2001a;
+}
+
+#bouton-menu-responsive.collapsed {
+	border-color: #000000;
+}
+
+#bouton-menu-responsive.collapsed .icon-bar {
+	background-color: #000000;
+}
+
+.navbar .navbar-sites .navbar-nav > li.active a {
+	color: #e2001a;
+}
+
+#bloc-menu a:hover,
+#bloc-menu li.sfhover > a,
+#bloc-menu a:focus {
+	color: #e2001a !important;
+}		
+
+#bloc-menu ul.level_1 > li.selected > a {
+	color: #e2001a;
+	background-image: url("../img/coin-md.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+	
+.vue-bloc.urgent {
+    color: #e2001a;
+}
+
+.vue-bloc.urgent > article  {
+	border-color: #e2001a;
+}
+
+.vue-bloc.urgent h2,
+.vue-bloc.urgent h2 a {
+	color: #e2001a;
+}
+
+footer.footer-site .plan-sites h1.site-courant,
+footer.footer-site .plan-sites h1.site-courant a {
+	color: #e2001a;
+}
+
+.tabs > ul li a:active
+{
+    color: #e2001a;
+}
+
+.tabs > ul li[aria-selected=true] a strong {
+	color: #e2001a;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	color: #E2001A;
+}
+
+/* form */
+.zone label:hover,
+.zone label:focus {
+	color: #E2001A;
+}
+
+form .form-control:hover,
+form .zone .form-control:hover {
+	border-color: #E2001A;
+}
+
+form .form-control:focus,
+form .zone .form-control:focus {
+	border-color: #000000;
+}
+
+.bodywrapper .btn-primary {
+	background-color: #e2001a;
+}
+
+.bodywrapper .btn:focus,
+.bodywrapper .btn:hover,
+.bodywrapper .btn-primary:focus,
+.bodywrapper .btn-primary:hover {
+	background-color: #ff001d;
+}
+
+.zone-radio input[type="radio"]:hover + label:before,
+.zone-radio input[type="radio"]:focus + label:before,
+.zone-checkbox input[type="checkbox"]:hover + label:before,
+.zone-checkbox input[type="checkbox"]:focus + label:before {
+	border-color: #ff001d;
+}
+
+.zone-radio input[type="radio"] + label:after,
+.zone-checkbox input[type="checkbox"] + label:after {
+	background-color: #ff001d;
+}
+
+/* .page-filtrage */
+.page-filtrage .options-filtre {
+	/*background-color: #ff001d;
+	color: #ffffff;*/	
+}
+
+.page-filtrage .options-filtre a {
+	/*color: #ffffff;*/	
+}
+
+.page-filtrage .options-filtre a:hover {
+	/*color: #ffffff !important;*/	
+	/*text-decoration: underline;*/
+}
+
+/* responsive specifique site institutionnel */
+@media (max-width: 767px) {
+	#bloc-menu a.actif {
+		color: #e2001a;
+	}
+	.js #bloc-menu ul.level_1 > li > ul {
+		border-top: solid 1px #e2001a;
+	}
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:bpint="http://www.sigma.fr/jahia/nt/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:jnt="http://www.jahia.org/jahia/nt/1.0" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:commix="http://www.jahia.com/jahia/mix/1.0" xmlns:bpimix="http://www.sigma.fr/jahia/mix/1.0" xmlns:jmix="http://www.jahia.org/jahia/mix/1.0" xmlns:bpi="http://www.sigma.fr/bpi" xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:rep="internal">
+  <templateSets jcr:primaryType="jnt:templateSets">
+    <newsletter j:dependencies="default" j:installedModules="newsletter" j:originWS="default" j:siteType="jahiapp" j:title="Jahia Newsletter" j:wcagCompliance="true" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="jnt:virtualsite">
+      <portlets j:originWS="default" jcr:primaryType="jnt:portletFolder" />
+      <files j:originWS="default" jcr:primaryType="jnt:folder" />
+      <contents j:originWS="default" jcr:primaryType="jnt:contentFolder" />
+      <templates j:originWS="default" j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+        <newsletters j:applyOn="jnt:newsletter jnt:newsletters" j:defaultTemplate="true" j:hiddenTemplate="false" j:originWS="default" j:priority="10" j:view="default" jcr:primaryType="jnt:contentTemplate">
+          <pagecontent j:originWS="default" jcr:primaryType="jnt:contentList">
+            <custom-rows-960gs customColumn="16" j:originWS="default" jcr:primaryType="jnt:customRow" />
+          </pagecontent>
+          <custom-rows-960gs-col1 j:originWS="default" jcr:primaryType="jnt:contentList">
+            <mainResourceDisplay j:mainResourceView="default" j:originWS="default" jcr:primaryType="jnt:mainResourceDisplay" />
+          </custom-rows-960gs-col1>
+        </newsletters>
+        <newsletter-confirmation j:hiddenTemplate="true" j:originWS="default" jcr:primaryType="jnt:pageTemplate">
+          <pagecontent j:originWS="default" jcr:primaryType="jnt:contentList">
+            <custom-rows-960gs customColumn="16" j:originWS="default" jcr:primaryType="jnt:customRow" />
+          </pagecontent>
+        </newsletter-confirmation>
+        <newsletter-subscriptions j:hiddenTemplate="true" j:originWS="default" jcr:primaryType="jnt:pageTemplate">
+          <pagecontent j:originWS="default" jcr:primaryType="jnt:contentList">
+            <custom-rows-960gs customColumn="16" j:originWS="default" jcr:primaryType="jnt:customRow" />
+          </pagecontent>
+        </newsletter-subscriptions>
+        <contents j:originWS="default" jcr:primaryType="jnt:contentFolder" />
+        <files j:originWS="default" jcr:primaryType="jnt:folder" />
+        <newsletter-commun j:applyOn="jnt:newsletterIssue" j:defaultTemplate="true" j:hiddenTemplate="false" j:originWS="default" j:priority="10" j:view="commun" jcr:primaryType="jnt:contentTemplate">
+          <facebook j:originWS="default" jcr:primaryType="jnt:contentList">
+            <retrouvez-la-bpi-sur-facebook j:node="/sites/Balises/files/listeFacebook.png" j:originWS="default" j:target="_blank" j:url="https://www.facebook.com/bpi.pompidou" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="jnt:externalLinkImageReference">
+              <j:acl j:inherit="true" jcr:primaryType="jnt:acl" />
+              <j:translation_fr j:alternateText="Facebook" jcr:language="fr" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Retrouvez la Bpi sur Facebook" />
+            </retrouvez-la-bpi-sur-facebook>
+          </facebook>
+          <twitter j:originWS="default" jcr:primaryType="jnt:contentList">
+            <retrouvez-la-bpi-sur-twitter j:node="/templateSets/module-bpi-template/files/twitter.png" j:originWS="default" j:target="_blank" j:url="https://twitter.com/Bpi_Pompidou" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="jnt:externalLinkImageReference">
+              <j:acl j:inherit="true" jcr:primaryType="jnt:acl" />
+              <j:translation_fr j:alternateText="Twitter" jcr:language="fr" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Retrouvez la Bpi sur Twitter" />
+            </retrouvez-la-bpi-sur-twitter>
+          </twitter>
+          <dailymotion j:originWS="default" jcr:primaryType="jnt:contentList">
+            <les-videos-de-la-bpi-sur-dailymo j:node="/templateSets/module-bpi-template/files/dailymotion.png" j:originWS="default" j:target="_blank" j:url="http://www.dailymotion.com/Bpi_Centre_Pompidou" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="jnt:externalLinkImageReference">
+              <j:acl j:inherit="true" jcr:primaryType="jnt:acl" />
+              <j:translation_fr j:alternateText="Dailymotion" jcr:language="fr" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Les vidéos de la Bpi sur Dailymotion" />
+            </les-videos-de-la-bpi-sur-dailymo>
+          </dailymotion>
+          <rss j:originWS="default" jcr:primaryType="jnt:contentList">
+            <internal-link-on-image j:node="/templateSets/module-bpi-template/files/rss.png" j:originWS="default" j:target="_top" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="jnt:nodeLinkImageReference">
+              <j:acl j:inherit="true" jcr:primaryType="jnt:acl" />
+              <j:translation_fr j:alternateText="RSS" jcr:language="fr" jcr:primaryType="jnt:translation" />
+            </internal-link-on-image>
+          </rss>
+        </newsletter-commun>
+      </templates>
+      <newsletter-subscribe-confirmation j:originWS="default" j:templateNode="/templateSets/newsletter/templates/newsletter-confirmation" jcr:primaryType="jnt:page">
+        <j:translation_en jcr:language="en" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Newsletter subscription confirmation" />
+        <j:translation_de jcr:language="de" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Newsletter Anmeldebestätigung" />
+        <j:translation_fr jcr:language="fr" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Confirmation d'abonnement Newsletter" />
+        <pagecontent j:originWS="default" jcr:primaryType="jnt:contentList">
+          <bigText j:originWS="default" jcr:primaryType="jnt:bigText">
+            <j:translation_en jcr:language="en" jcr:primaryType="jnt:translation" text="&lt;p&gt;Thank you! Your subscription has been taken into account.&lt;/p&gt; " />
+            <j:translation_de jcr:language="de" jcr:primaryType="jnt:translation" text="&lt;p&gt;Danke! Ihre Anmeldung war erfolgreich.&lt;/p&gt; " />
+            <j:translation_fr jcr:language="fr" jcr:primaryType="jnt:translation" text="&lt;p&gt;Merci! Votre abonnement a été pris en compte.&lt;/p&gt; " />
+          </bigText>
+        </pagecontent>
+        <custom-rows-960gs-col1 j:originWS="default" jcr:primaryType="jnt:contentList">
+          <rich-text j:originWS="default" jcr:primaryType="jnt:bigText">
+            <j:translation_en jcr:language="fr" jcr:primaryType="jnt:translation" text="&lt;p&gt;  Merci! Votre abonnement a été pris en compte.&lt;/p&gt; " />
+            <j:translation_fr jcr:language="en" jcr:primaryType="jnt:translation" text="&lt;p&gt;  Thank you! Your subscription has been taken into account.&lt;/p&gt; " />
+          </rich-text>
+        </custom-rows-960gs-col1>
+      </newsletter-subscribe-confirmation>
+      <newsletter-unsubscribe-confirmation j:originWS="default" j:templateNode="/templateSets/newsletter/templates/newsletter-confirmation" jcr:primaryType="jnt:page">
+        <j:translation_en jcr:language="en" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Newsletter unsubscription confirmation" />
+        <j:translation_de jcr:language="de" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Newsletter Abmeldebestätigung" />
+        <j:translation_fr jcr:language="fr" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Confirmation de désabonnement Newsletter" />
+        <pagecontent j:originWS="default" jcr:primaryType="jnt:contentList">
+          <bigText j:originWS="default" jcr:primaryType="jnt:bigText">
+            <j:translation_en jcr:language="en" jcr:primaryType="jnt:translation" text="&lt;p&gt;Your unsubscription has been taken into account.&lt;/p&gt; " />
+            <j:translation_de jcr:language="de" jcr:primaryType="jnt:translation" text="&lt;p&gt;Danke! Ihre Abmeldung war erfolgreich.&lt;/p&gt; " />
+            <j:translation_fr jcr:language="fr" jcr:primaryType="jnt:translation" text="&lt;p&gt;Votre désabonnement a été pris en compte.&lt;/p&gt; " />
+          </bigText>
+        </pagecontent>
+        <custom-rows-960gs-col1 j:originWS="default" jcr:primaryType="jnt:contentList">
+          <rich-text j:originWS="default" jcr:primaryType="jnt:bigText">
+            <j:translation_en jcr:language="en" jcr:primaryType="jnt:translation" text="&lt;p&gt;  Your unsubscription has been taken into account.&lt;/p&gt; " />
+            <j:translation_fr jcr:language="fr" jcr:primaryType="jnt:translation" text="&lt;p&gt;  Votre désabonnement a été pris en compte.&lt;/p&gt; " />
+          </rich-text>
+        </custom-rows-960gs-col1>
+      </newsletter-unsubscribe-confirmation>
+      <newsletter-subscriptions j:originWS="default" j:templateNode="/templateSets/newsletter/templates/newsletter-subscriptions" jcr:primaryType="jnt:page">
+        <j:translation_en jcr:language="en" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Newsletter subscriptions" />
+        <j:translation_fr jcr:language="fr" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Newsletter Abonnements" />
+        <j:translation_de jcr:language="de" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Newsletter Abonnements" />
+        <pagecontent j:originWS="default" jcr:primaryType="jnt:contentList">
+          <newsletters-subscriptions j:originWS="default" jcr:primaryType="jnt:newslettersSubscriptions" />
+        </pagecontent>
+        <custom-rows-960gs-col1 j:originWS="default" jcr:primaryType="jnt:contentList">
+          <newsletter-subscriptions j:fields="" j:originWS="default" jcr:primaryType="jnt:newslettersSubscriptions">
+            <j:translation_en jcr:language="en" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="newsletter-subscriptions" />
+            <j:translation_fr jcr:language="fr" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="newsletter-abonnements" />
+          </newsletter-subscriptions>
+        </custom-rows-960gs-col1>
+      </newsletter-subscriptions>
+      <newsletters j:originWS="default" jcr:primaryType="jnt:newsletters" />
+      <j:acl jcr:primaryType="jnt:acl" />
+    </newsletter>
+  </templateSets>
+</content>
+

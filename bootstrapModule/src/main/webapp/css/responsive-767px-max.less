@@ -1,0 +1,149 @@
+// UP TO LANDSCAPE PHONE
+// ---------------------
+
+@media (max-width: 480px) {
+
+  // Smooth out the collapsing/expanding nav
+  .bodywrapper .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0); // activate the GPU
+  }
+
+  // Block level the page header small tag for readability
+  .bodywrapper .page-header h1 small {
+    display: block;
+    line-height: @baseLineHeight;
+  }
+
+  // Update checkboxes for iOS
+  .bodywrapper input[type="checkbox"],
+  .bodywrapper input[type="radio"] {
+    border: 1px solid #ccc;
+  }
+
+  // Remove the horizontal form styles
+  .bodywrapper .form-horizontal .control-group > label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left;
+  }
+  // Move over all input controls and content
+  .bodywrapper .form-horizontal .controls {
+    margin-left: 0;
+  }
+  // Move the options list down to align with labels
+  .bodywrapper .form-horizontal .control-list {
+    padding-top: 0; // has to be padding because margin collaspes
+  }
+  // Move over buttons in .form-actions to align with .controls
+  .bodywrapper .form-horizontal .form-actions {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  // Modals
+  .bodywrapper .modal {
+    position: absolute;
+    top:   10px;
+    left:  10px;
+    right: 10px;
+    width: auto;
+    margin: 0;
+    &.fade.in { top: auto; }
+  }
+  .bodywrapper .modal-header .close {
+    padding: 10px;
+    margin: -10px;
+  }
+
+  // Carousel
+  .bodywrapper .carousel-caption {
+    position: static;
+  }
+
+}
+
+
+
+// LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
+// --------------------------------------------------
+
+@media (max-width: 767px) {
+
+  // Padding to set content in a bit
+  .bodywrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  // Negative indent the now static "fixed" navbar
+  .bodywrapper .navbar-fixed-top,
+  .bodywrapper .navbar-fixed-bottom {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  // Remove padding on container given explicit padding set on body
+  .bodywrapper .container-fluid {
+    padding: 0;
+  }
+
+  // TYPOGRAPHY
+  // ----------
+  // Reset horizontal dl
+  .bodywrapper .dl-horizontal {
+    dt {
+      float: none;
+      clear: none;
+      width: auto;
+      text-align: left;
+    }
+    dd {
+      margin-left: 0;
+    }
+  }
+
+  // GRID & CONTAINERS
+  // -----------------
+  // Remove width from containers
+  .bodywrapper .container {
+    width: auto;
+  }
+  // Fluid rows
+  .bodywrapper .row-fluid {
+    width: 100%;
+  }
+  // Undo negative margin on rows and thumbnails
+  .bodywrapper .row,
+  .bodywrapper .thumbnails {
+    margin-left: 0;
+  }
+  // Make all grid-sized elements block level again
+  .bodywrapper [class*="span"],
+  .bodywrapper .row-fluid [class*="span"] {
+    float: none;
+    display: block;
+    width: auto;
+    margin-left: 0;
+  }
+
+  // FORM FIELDS
+  // -----------
+  // Make span* classes full width
+  .bodywrapper .input-large,
+  .bodywrapper .input-xlarge,
+  .bodywrapper .input-xxlarge,
+  .bodywrapper input[class*="span"],
+  .bodywrapper select[class*="span"],
+  .bodywrapper textarea[class*="span"],
+  .bodywrapper .uneditable-input {
+    .input-block-level();
+  }
+  // But don't let it screw up prepend/append inputs
+  .bodywrapper .input-prepend input,
+  .bodywrapper .input-append input,
+  .bodywrapper .input-prepend input[class*="span"],
+  .bodywrapper .input-append input[class*="span"] {
+    display: inline-block; // redeclare so they don't wrap to new lines
+    width: auto;
+  }
+
+}

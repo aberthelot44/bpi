@@ -1,0 +1,639 @@
+
+
+/******************************************************************************
+* Languages
+******************************************************************************/
+
+/*.bodywrapper div#languages {
+	float:left;
+	display:inline;
+}
+.bodywrapper #languages ul  {
+	list-style: none;
+	float:left;
+	display:inline;
+	margin:1em 0;
+	text-transform:uppercase;
+	font-size:100%;
+}
+.bodywrapper #languages li {
+	display:inline;
+	padding:0 5px;
+	background: none;
+	line-height:normal
+}
+.bodywrapper #languages li.selected {
+	text-decoration:underline
+}
+
+.logoBPI
+{
+	height: 100px;
+}
+*/
+
+
+/*.bordure
+{
+-moz-border-radius: 5px;
+-webkit-border-radius:  5px; 
+border-radius:  5px; 
+border: 1px solid #000000;
+}*/
+
+
+/*.recherche
+{
+  height:30px;
+  padding-top: 30px;
+
+}*/
+
+/*.champsRechercheheader
+{
+	width: 300px;
+}*/
+
+/*.formulaire
+{
+  height: 30px;
+  width : 330px;
+  background-color: black;
+  padding-top: 1px;
+}*/
+
+/*.bpiheader
+{
+	background-color: white;
+}
+*/
+
+/*.borduredroite
+{
+	background-color: white;
+	border-right: 1px;
+	border-color: black;
+	border-style: solid;
+	border-left: none;
+	border-top: none;
+	border-bottom: none;
+}
+
+.borduregauche
+{
+	background-color: white;
+	border-left: 1px;
+	border-color: black;
+	border-style: solid;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+
+.borduregaucheDroite
+{
+	background-color: white;
+	border-left: 1px;
+	border-right: 1px;
+	border-color: black;
+	border-style: solid;
+	border-top: none;
+	border-bottom: none;
+}*/
+
+
+
+/*.contenuHeader
+{
+	height: 35px;
+	border-left: 0px;
+	border-right: 0px;
+	border-color: black;
+	border-style: solid;
+	border-top: 0px;
+	border-bottom: 1px;
+}*/
+
+/*.headeretnav
+{
+	border-left: 0px;
+	border-right: 0px;
+	border-color: black;
+	border-style: solid;
+	border-top: 0px;
+	border-bottom: 90px;
+}*/
+
+/*.contenuGeneral
+{
+	padding-top: 250px;
+}*/
+
+
+/*.image
+{
+ width:200px;
+ overflow: none;
+ float: left;
+}*/
+
+/*.filigrane
+{
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	font-size: 1.20em;
+}*/
+
+
+.blocfuturvue
+{
+	height: 200px;
+	background-color: gray;
+}
+
+
+/*h1,h2
+{
+	text-align: center;
+}*/
+
+/*.legende
+{
+ font-style: italic;
+ text-align: center;
+}*/
+
+/*.blocimageArticle
+{
+ float: right;
+ height: 170px;
+}
+
+.imageArticle
+{
+height: 150px;
+}
+
+.blocimageArticle
+{
+ float: right;
+}*/
+
+/*.blocSimple
+{
+ 	border-style: solid;
+ 	border-width: 1px;
+ 	text-align: center;
+ 	width: 100px;
+ 	height: 100px;
+}*/
+
+
+/*.bloc
+{
+	height: 400px;
+}*/
+
+
+/*.ligne
+{
+	height: 150px;
+}*/
+
+
+.libelle
+{
+	font-weight: bold; 
+}
+
+/*
+.breadcrumb
+{
+	background-color: white;
+}*/
+
+/*.logoFooter
+{
+	height: 150px;
+
+	
+}
+
+.partenaireFooter
+{
+
+	width: 150px;	
+}
+
+.lienFooter
+{
+	text-align: center;	
+	
+}*/
+
+
+/***************************/
+/* MENU menuFooter FOOTER */
+
+
+/*.menuFooter .navbarBPI ul.navmenu {
+	margin: 0;
+	list-style-type:none;
+	display: block;
+	margin-left: 0px;
+}
+
+.menuFooter .level_2
+{
+	font-weight: normal; 	
+}
+
+.menuFooter .level_1
+{
+	font-weight: bold; 	
+}
+
+.libelleSite
+{
+	font-size: 1.20em;
+	font-weight: bold;
+}
+
+
+
+.menuFooter .navbarBPI ul.navmenu li {
+	float: left;
+	line-height: 25px;
+	width:150px;
+	list-style: none;
+	list-style-type:none;
+
+}*/
+/*
+.menuFooter .navbarBPI ul.navmenu li a {
+	color: #7F8384;
+	font-size:16px;
+	height: 35px;
+	display:block;
+	line-height: 35px;
+	white-space:pre;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.menuFooter .navbarBPI ul.navmenu li.hasChildren:hover {
+	background-color: #eaeaea;
+	background-repeat: repeat-x;
+	background-position: 50% 80%;
+	border-color: #333;
+	line-height: 35px;
+	position: relative;
+
+}
+
+.menuFooter .navbarBPI ul.navmenu li.noChildren:hover {
+	background-color: #eaeaea;
+	background-repeat: repeat-x;
+	background-position: 50% 80%;
+	border-color: #333;	
+	line-height: 35px;
+	position: relative;
+
+}
+.menuFooter .navbarBPI ul.navmenu li.hasChildren:hover a,
+.menuFooter .navbarBPI ul.navmenu li.noChildren:hover a {
+	color: black;
+	text-decoration: none;
+}
+.menuFooter .navbarBPI ul.navmenu li.hasChildren:hover div,
+.menuFooter .navbarBPI ul.navmenu li.noChildren:hover div {
+	display: block;
+	margin-top: -1px;
+}
+.menuFooter .navbarBPI ul.navmenu li.hasChildren:hover div ul li a,
+.menuFooter .navbarBPI ul.navmenu li.noChildren:hover div ul li a {
+	font-size:13px;
+	color: black;
+	white-space: normal
+}
+.menuFooter .navbarBPI ul.navmenu li.hasChildren {
+	background-repeat: no-repeat; 
+	background-position: 50% 80%;
+	position: relative;
+}
+.menuFooter .navbarBPI ul.navmenu li.hasChildren a {
+	color: black;
+}
+.menuFooter .navbarBPI ul.navmenu li.selected a,
+.menuFooter .navbarBPI ul.navmenu li.inPath a {
+	color: black;
+}
+.menuFooter .navbarBPI ul.navmenu li.hasChildren div {
+	display: none;
+	left: -1px;
+	top: 35px;
+	border: 1px solid #CECECE;
+	position: absolute;
+
+}
+
+.menuFooter .navbarBPI ul.navmenu li.hasChildren div ul {
+	list-style: none;
+	width: 200px;
+	background-color: #f4f4f4;
+	overflow: hidden;
+	border: 1px solid #ffffff;
+	margin:0px;
+
+}
+
+.menuFooter .navbarBPI ul.navmenu li.hasChildren div ul li {
+	padding: 5px;
+	padding-left: 10px;
+	line-height: 20px;
+	width:200px;
+}
+.menuFooter .navbarBPI ul.navmenu li.hasChildren div ul li a {
+	color: #333;
+	line-height: 20px;
+	height: auto;
+	display:block;
+}
+.menuFooter .navbarBPI ul.navmenu li.hasChildren div ul li.selected a {
+	color: #9D50CA;
+}
+.menuFooter .navbarBPI ul.navmenu li.hasChildren div ul li a:hover {
+	color: #9D50CA;
+	text-decoration: none;
+}
+
+.menuFooter .navbarBPI ul.level_2 li.hasChildren:hover,
+.menuFooter .navbarBPI ul.level_2 li.noChildren:hover {
+	background-image: none;
+	background-color: transparent;
+	border: none;
+	line-height: 20px;
+	position: inherit;
+}*/
+
+/*.footerHaut
+{
+	background-color: #E1E1E1;
+}
+
+
+.footerBas
+{
+	background-color:#F1F1F1;
+}
+
+.footerBas a
+{	color: #5D5D5D;	
+
+}
+
+.bibliosesame
+{
+  text-align: center;
+}*/
+
+/*.borduregaucheFooter
+{
+	background-color: white;
+	border-left: 1px;
+	border-color: #9C9C9C;
+	border-style: solid;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+
+.bordureGaucheBlanche
+{
+	border-left: 1px;
+	border-color: white;
+	border-style: solid;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;	
+}*/
+
+/*.libelleFooter
+{
+	font-size: 1.20em;
+	font-weight: bold;
+	color: #5D5D5D;	
+}*/
+
+/*.reseauSociaux a
+{
+	display: inline-block;
+}*/
+
+
+/*.siteCourant a
+{
+	color: red;
+}*/
+/*
+.marqueur {
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 0 10px 10px;
+	border-color: transparent transparent #ff0000 transparent;
+}*/
+
+.lienPicto
+{
+	height: 50px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.imageBloc
+{
+	height: 400px;
+}
+
+#menuDeconnecter
+{
+	display: none;
+	float: left;
+	width: 150px;
+}
+   
+/*   
+      span.deconect {
+      position:relative;
+      color:#396a86; 
+      text-decoration:none; 
+      font-family:arial, verdana, sans-serif; 
+      text-align:center; 
+      font-size:11px;
+    }
+    
+    span.deconect:hover {
+       background: none; 
+       z-index: 20; 
+    }
+    
+    span.deconect span { 
+      display: none;
+    }
+    
+    span.deconect:hover span {
+       display: block; 
+       position: absolute;
+       top: 14px; 
+       left: -1px;
+       font-family:arial, verdana, sans-serif; 
+       text-align:justify; 
+       font-size:12px;
+       font-weight:normal;
+       width:200px;
+       background: white;
+       padding: 1px;
+       border: 1px solid black;
+       border-left: 1px solid black;
+    }
+*/
+ 
+    
+ a.test {
+ display: inline; 
+
+    }
+    
+/*.ressource-pdf{
+background-image: url("../img/Picto-PDF.png");
+height: 50px;
+}*/
+
+.labelForm
+{
+	display: block;
+	width: 150px;
+	float: left;
+}
+
+
+
+/*.modal-dialog
+{
+	width: 800px;
+}*/
+
+#lecteurAudio
+{
+	display: none;
+}
+
+/*.urgent
+{
+	background-color: red;
+}*/
+
+/*.tc-mise-en-avant {
+	height: 166px
+}
+
+.tc-mise-en-avant-separation {	
+	border: 0;
+	padding: 30px 0 0 0;
+	background-image: url("../img/bordure-lg.png");
+	background-position: center top;
+	background-repeat: repeat-x;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	height: 166px
+}*/
+
+/*.tc-zone-thematique {
+  height: 100px
+}*/
+
+/* "Vue" Catégories */
+/* TODO : Couleur de l'arrière-plan à définir */
+/*.vue-arts {
+  background-color: grey;
+}
+.vue-bande-dessinee {
+  background-color: grey;
+}
+.vue-cinema {
+  background-color: grey;
+}
+.vue-culture-numerique {
+  background-color: grey;
+}
+.vue-culture-droit {
+  background-color: grey;
+}
+.vue-culture-economie {
+  background-color: grey;
+}
+.vue-culture-education {
+  background-color: grey;
+}
+.vue-ethnologie {
+  background-color: grey;
+}
+.vue-geographie {
+  background-color: grey;
+}
+.vue-histoire {
+  background-color: grey;
+}
+.vue-langues {
+  background-color: grey;
+}
+.vue-litterature {
+  background-color: grey;
+}
+.vue-medecine {
+  background-color: grey;
+}
+.vue-media {
+  background-color: grey;
+}
+.vue-musique {
+  background-color: grey;
+}
+.vue-sociologie {
+  background-color: grey;
+}
+.vue-spectacles-vivants {
+  background-color: grey;
+}
+.vue-philosophie {
+  background-color: grey;
+}
+.vue-politique {
+  background-color: grey;
+}
+.vue-psychologie-psychanalyse {
+  background-color: grey;
+}
+.vue-religions {
+  background-color: grey;
+}
+.vue-sciences-et-techniques {
+  background-color: #01ACF6;
+}
+.vue-sports {
+  background-color: grey;
+}
+.vue-tourisme {
+  background-color: grey;
+}
+.vue-travail {
+  background-color: grey;
+}
+.vue-vie-pratique {
+  background-color: grey;
+}*/

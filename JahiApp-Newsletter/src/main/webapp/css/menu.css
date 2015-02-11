@@ -1,0 +1,412 @@
+/****************************** menu large ******************************/
+@media (min-width: 768px) {	
+	#bloc-menu {
+		border-bottom: solid 1px #b2b2b2;
+		position: relative;
+		padding-left: 0;
+		padding-right: 0;
+		/*height: auto !important;*/
+		
+	}
+	
+	#bloc-menu a:hover,
+	#bloc-menu a:focus {
+		background-image: none;
+		text-decoration: none;
+	}
+		
+	#bloc-menu ul.level_1, 
+	#bloc-menu ul.level_1 ul { /* all lists */
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		line-height: 1;
+		font-size: 15px;
+		line-height: 17px;
+	}
+	
+	#bloc-menu ul.level_1 a {
+		display: block;
+		/*width: 180px;*/
+		/*max-width: 180px;
+		min-width: 170px;*/
+		width: 100%;
+		font-size: 15px;
+		line-height: 17px;		
+		padding: 5px;
+		padding-left: 12px;
+		padding-right: 12px;
+		color: #000000;
+	    text-shadow: 0 1px 0 #ffffff;    
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	    box-sizing: border-box;         /* Opera/IE 8+ */    
+	}
+	
+	#bloc-menu ul.level_1 {
+		width: 100%;
+		position: relative;
+	}
+	
+	#bloc-menu ul.level_1 {
+		height: 28px;
+	}
+	
+	#bloc-menu ul.level_1 li { /* all list items */
+		float: left;
+		/*width: 10em;*/ /* width needed or else Opera goes nuts */
+		/*width: 100%;*/	
+		/*width: 180px;*/
+	
+		font-size: 15px;
+		line-height: 17px;
+		text-align:center;		
+	}
+	
+	#bloc-menu ul.level_1 > li {
+		border-right: solid 1px #b2b2b2;
+		/*min-width: 10%;*/
+		width: auto;
+		max-width: 180px;
+		min-width: 100px;
+		/*position: relative;*/
+	}
+		
+	#bloc-menu ul.level_1 > li.lastInLevel {
+		border-right: solid 1px transparent;
+	}
+	
+	#bloc-menu ul.level_1 > li > a {
+		/*width: 100%;*/
+		width: auto;
+		display: block;
+		font-size: 15px;
+		position: relative;
+		border-top: solid 1px transparent;
+		font-family: "DINMedium";
+		font-weight: normal;
+	}
+	
+	#bloc-menu ul.level_1 > li.sfhover > a, 
+	#bloc-menu ul.level_1 > li:hover > a, #bloc-menu ul.level_1 > li:focus > a,
+	#bloc-menu ul.level_1 > li > a:hover, #bloc-menu ul.level_1 > li > a:focus {	
+		background-color: #ffffff;
+		/*text-decoration: none;*/
+		border-top: solid 1px #b2b2b2;
+		border-bottom: 0;
+		z-index: 99999;
+		/*background-image: none;*/
+	}
+	
+	#bloc-menu ul.level_1 > li.firstInLevel.sfhover > a, 
+	#bloc-menu ul.level_1 > li.firstInLevel:hover > a,
+	#bloc-menu ul.level_1 > li.firstInLevel:focus > a,
+	#bloc-menu ul.level_1 > li.firstInLevel > a:hover, 
+	#bloc-menu ul.level_1 > li.firstInLevel > a:focus {	
+		border-left: solid 1px #b2b2b2;
+		border-bottom: 0;
+		/*background-image: none;*/
+	}
+		
+	#bloc-menu ul.level_1 > li.lastInLevel:hover > a,
+	#bloc-menu ul.level_1 > li.lastInLevel:focus > a,
+	#bloc-menu ul.level_1 > li.lastInLevel > a:hover,
+	#bloc-menu ul.level_1 > li.lastInLevel > a:focus {
+		border-right: solid 1px #b2b2b2;
+		border-bottom: 0;
+		/*background-image: none;*/
+	}
+	
+	/*#bloc-menu ul.level_1 > li.selected > a {
+		color: #e2001a;
+		background-image: url("../img/coin-md.png");
+		background-position: right bottom;
+		background-repeat: no-repeat;
+	}*/
+	
+	#bloc-menu ul.level_1 > li > ul { /* second-level lists */
+		position: absolute;
+		background-color: #ffffff;
+		/*width: 14em;*/
+		/*width: 182px;*/
+		width: 100%;
+		/*margin-left: -1000em;*/ /* using left instead of display to hide menus because display: none isn't read by screen readers */
+		margin-left: -10000px;
+		border: solid 1px #b2b2b2;
+		/*border-top: 0;*/	
+		z-index: 9999;
+		padding: 15px 35px 15px 35px;
+		margin-top: -1px;
+		min-height: 122px;
+		/*background-image: url("../img/navmenu-ss-menu.png");
+		background-position: right bottom;
+		background-repeat: no-repeat;*/	
+		-webkit-box-shadow: 1px 4px 4px rgba(0,0,0,.24);
+		-moz-box-shadow: 1px 4px 4px rgba(0,0,0,.24);
+		box-shadow: 1px 4px 4px rgba(0,0,0,.24);	
+		left: 0;
+	}
+	
+	#bloc-menu ul.level_1 li ul li {
+		/*float: none;*/
+		float: left;
+		/*clear: both;*/
+		clear: none;
+		width: auto;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		width: 18%;
+		min-height: 24px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	#bloc-menu ul.level_1 li ul li,
+	#bloc-menu ul.level_1 li ul li a {
+		font-size: 13px;
+		line-height: 15px;
+		color: #333333;
+		text-decoration: none;
+		/*background-color: #ffffff;*/
+		text-align: left;
+	}
+	
+	#bloc-menu ul.level_1 li ul li a {
+		width: auto;
+		padding: 0;
+	}
+	
+	#bloc-menu ul.level_1 li li > a:hover,
+	#bloc-menu ul.level_1 li li > a:focus,
+	/*#bloc-menu ul.level_1 li li:hover > a,
+	#bloc-menu ul.level_1 li li.sfhover > a,*/
+	#bloc-menu ul.level_1 li li:hover > a:hover,
+	#bloc-menu ul.level_1 li li.sfhover > a:focus {
+		/*background-color: #f4f4f4;*/
+		/*text-decoration: none;*/
+		/*text-decoration: underline;*/
+		/*color: #000000;*/
+		border-bottom: 0;
+		background-image: none;
+	}
+	
+	#bloc-menu ul.level_1 li:hover ul, 
+	#bloc-menu ul.level_1 li.sfhover ul { /* lists nested under hovered list items */
+		margin-left: 0;
+		left: 0;
+	}
+	
+	#bloc-menu #content {
+		clear: left;
+		color: #ccc;
+	}
+	
+	#bloc-menu ul.level_1 li ul li ul {
+		padding-top: 5px;
+	}
+	
+	#bloc-menu ul.level_1 li ul li ul li,
+	#bloc-menu ul.level_1 li ul li ul li a {
+		font-family: "DINLight";
+		font-weight: normal;
+		font-size: 11px;
+		line-height: 13px;
+	}
+	
+	#bloc-menu ul.level_1 li ul li ul li {
+		/*background-image: url("../img/puce-menu.png");
+		background-position: 5px center;
+		background-repeat: no-repeat;*/
+		/*padding-left: 20px;*/
+		padding-top: 5px;
+		padding-bottom: 5px;
+		/*float: none;
+		clear: both;
+		margin-right: 0;*/
+		width: auto;
+		min-height: auto;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	/* extra positioning rules for limited noscript keyboard accessibility */
+	#bloc-menu ul.level_1 > li > a:focus + ul {
+		margin-left: 0;
+		left: 0;
+	}
+	
+	#bloc-menu ul.level_1 li li a:focus + ul {
+		/*margin-left: 1010em;*/
+		/*margin-left: 10180px;*/
+	}
+	#bloc-menu ul.level_1 li li a:focus {
+		/*margin-left:1000em;*/ 
+		/*margin-left: 10000px;
+		left: 0;*/
+		/*width:10em;*/ 
+		/*width: 100%;
+		background-color: #ffffff;*/
+	}
+	
+	#bloc-menu ul.level_1 li:hover a:focus, 
+	#bloc-menu ul.level_1 li.sfhover a.sffocus { 
+		/*margin-left: 0; 
+		left: 0;
+		border-bottom: 0;
+		background-image: none;*/
+	}
+	#bloc-menu ul.level_1 li li:hover a:focus + ul, 
+	#bloc-menu ul.level_1 li li.sfhover a.sffocus + ul  { 
+		/*margin-left: 10em;*/
+		 /*margin-left: 14em;*/
+		 /*margin-left: 180px;*/
+	}
+}
+
+
+
+
+
+/****************************** menu mobile ******************************/
+@media (max-width: 767px) {
+
+	.barre-flottante-active {
+		position: relative;
+	}
+	#bloc-menu {
+		position: relative;
+		/*height: auto !important;*/
+		border: 0;
+		max-height: none;
+	}
+		
+	#bloc-menu a {
+		color: #000000;
+	}
+	
+	#bloc-menu a:hover,
+	#bloc-menu a:focus {
+		border-bottom: 0;
+		background-image: none;
+		text-decoration: none;
+	}
+	
+	#bloc-menu:target {
+		/*display: block;*/
+	}	
+			
+	#bloc-menu ul.level_1, 
+	#bloc-menu ul.level_1 ul { /* all lists */
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		line-height: 1;
+		font-size: 15px;
+		line-height: 17px;
+	}
+	
+	#bloc-menu ul.level_1 a {
+		display: block;
+		/*width: 180px;*/
+		/*max-width: 180px;
+		min-width: 170px;*/
+		width: 100%;
+		font-size: 15px;
+		line-height: 17px;		
+		padding: 5px;
+		padding-left: 13px;
+		padding-right: 13px;
+	    text-shadow: 0 1px 0 #ffffff;    
+	    cursor: pointer !important;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	    box-sizing: border-box;         /* Opera/IE 8+ */    
+	}
+	
+	#bloc-menu ul.level_1 {
+		width: 100%;
+		position: relative;
+	}
+	
+	#bloc-menu ul.level_1 {
+		margin-top: 15px;
+	}
+		
+	#bloc-menu ul.level_1 li { /* all list items */		
+		width: auto;
+		display: block;	
+		font-size: 15px;
+		line-height: 17px;
+		text-align:center;
+		min-height: 28px;
+	}
+	
+	#bloc-menu ul.level_1 > li {
+		border-bottom: 1px solid #B2B2B2;
+	}
+	
+	#bloc-menu ul.level_1 li a {
+		height: auto;
+	}
+	
+	#bloc-menu ul.level_1 > li > a {
+		font-size: 15px;
+		border-top: solid 1px transparent;
+		font-family: "DINMedium";
+		font-weight: normal;
+	}
+	
+	
+	#bloc-menu ul.level_1 > li > ul { /* second-level lists */		
+		background-color: #ffffff;
+		width: 100%;
+		border: 0;
+		border-top: dotted 1px #b2b2b2;
+		z-index: 9999;
+		padding: 15px 15px 15px 15px;
+		text-align: left;
+		/*min-height: 195px;*/
+		/*background-image: url("../img/navmenu-ss-menu.png");
+		background-position: right bottom;
+		background-repeat: no-repeat;*/
+	}
+	
+	.js #bloc-menu ul.level_1 > li > ul {
+		/*margin-left: -10000px;
+		left: 0;*/
+		/*position: absolute;*/
+		/*margin-top: -1px;*/
+		display: none;
+		/*border-top: solid 1px #e2001a;*/
+	}
+	
+	.js #bloc-menu ul.level_1 > li > ul ul {
+		display: block !important;
+	}
+	
+	#bloc-menu ul.level_1 > li > ul li {	
+		text-align: left;
+	}
+		
+	#bloc-menu ul.level_1 > li > ul ul li {
+		height: auto;
+		min-height: 0;
+	}
+	
+	#bloc-menu ul.level_1 > li > ul ul li a {		
+		font-family: "DINLight";
+		font-weight: normal;
+		font-size: 11px;
+		line-height: 13px;		
+		/*padding-top: 5px;
+		padding-bottom: 5px;*/
+		/*height: auto;*/
+	}	
+		
+	
+	/*.js #bloc-menu .navigation > ul.navmenu li:hover ul {
+		margin-left: 0;
+		position: relative;
+	}*/	
+	
+}

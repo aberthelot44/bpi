@@ -1,0 +1,209 @@
+/* http://carroll.org.uk/sandbox/suckerfish/bones2.html */
+/* menu à 3 niveaux, accessible par clavier, avec ou sans js */
+
+#bloc-menu {
+	border-bottom: solid 1px #b2b2b2;
+	/*height: auto !important;*/
+	
+}
+
+#bloc-menu .navbar-collapse.in {
+	overflow: visible;
+}
+
+
+#bloc-menu ul.level_1, 
+#bloc-menu ul.level_1 ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+	font-size: 15px;
+	line-height: 17px;
+}
+
+#bloc-menu ul.level_1 a {
+	display: block;
+	/*width: 10em;*/
+	/*width: 100%;*/
+	width: 180px;
+	font-size: 15px;
+	line-height: 17px;
+		
+	padding: 5px 15px 5px 15px;
+	
+	color: #000000;
+    text-shadow: 0 1px 0 #FFFFFF;
+    
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    
+}
+
+#bloc-menu ul.level_1 > li > a:hover,
+#bloc-menu ul.level_1 > li > a:focus,
+#bloc-menu ul.level_1 > li:hover > a,
+#bloc-menu ul.level_1 > li.sfhover > a {
+	background-color: #eaeaea;
+	text-decoration: none;
+	color: #000000;
+}
+
+#bloc-menu ul.level_1 {
+	width: 100%;
+	position: relative;
+}
+
+#bloc-menu ul.level_1 {
+	height: 28px;
+}
+
+#bloc-menu ul.level_1 li { /* all list items */
+	float: left;
+	/*width: 10em;*/ /* width needed or else Opera goes nuts */
+	/*width: 100%;*/	
+	width: 180px;
+
+	font-size: 15px;
+	line-height: 17px;
+	text-align:center;		
+}
+
+#bloc-menu ul.level_1 > li {
+	border-right: solid 1px #b2b2b2;
+	min-width: 10%;
+	width: auto;
+	position: relative;
+}
+
+#bloc-menu ul.level_1 > li.lastInLevel {
+	border-right: 0;
+}
+
+#bloc-menu ul.level_1 > li > a {
+	/*width: 100%;*/
+	width: auto;
+	display: block;
+	font-size: 15px;
+}
+
+#bloc-menu ul.level_1 > li.selected > a {
+	color: #e2001a;
+	background-image: url("../img/coin-md.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+#bloc-menu ul.level_1 li ul { /* second-level lists */
+	position: absolute;
+	background-color: #ffffff;
+	/*width: 14em;*/
+	width: 182px;
+	/*margin-left: -1000em;*/ /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	margin-left: -10000px;
+	border: solid 1px #b2b2b2;
+	-webkit-box-shadow: 1px 2px 4px rgba(0,0,0,.24);
+	-moz-box-shadow: 1px 2px 4px rgba(0,0,0,.24);
+	box-shadow: 1px 2px 4px rgba(0,0,0,.24);		
+}
+
+#bloc-menu ul.level_1 li ul {
+	z-index: 9999;
+}
+
+#bloc-menu ul.level_1 li ul li,
+#bloc-menu ul.level_1 li ul li a {
+	font-size: 13px;
+	color: #333333;
+	text-decoration: none;
+}
+
+#bloc-menu ul.level_1 li li > a:hover,
+#bloc-menu ul.level_1 li li > a:focus,
+#bloc-menu ul.level_1 li li:hover > a,
+#bloc-menu ul.level_1 li li.sfhover > a,
+#bloc-menu ul.level_1 li li:hover > a:hover,
+#bloc-menu ul.level_1 li li.sfhover > a:focus {
+	background-color: #f4f4f4;
+	text-decoration: none;
+	color: #000000;
+}
+
+#bloc-menu ul.level_1 li ul ul { /* third-and-above-level lists */
+	/*margin: -1em 0 0 -1000em;*/
+	/*margin: -28px 0 0 -1000em;*/
+	margin: -28px 0 0 -10180px;
+}
+
+#bloc-menu ul.level_1 li:hover ul ul, 
+#bloc-menu ul.level_1 li.sfhover ul ul {
+	/*margin-left: -1000em;*/
+	margin-left: -10000px;
+}
+
+#bloc-menu ul.level_1 li:hover ul, 
+#bloc-menu ul.level_1 li.sfhover ul { /* lists nested under hovered list items */
+	margin-left: 0;
+}
+#bloc-menu ul.level_1 li li:hover ul, 
+#bloc-menu ul.level_1 li li.sfhover ul {
+	/*margin-left: 14em;*/
+	margin-left: 180px;
+}
+
+#bloc-menu #content {
+	clear: left;
+	color: #ccc;
+}
+
+/* extra positioning rules for limited noscript keyboard accessibility */
+#bloc-menu ul.level_1 li a:focus + ul {
+	margin-left: 0;
+}
+#bloc-menu ul.level_1 li li a:focus + ul {
+	/*margin-left: 1010em;*/
+	margin-left: 10180px;
+}
+#bloc-menu ul.level_1 li li a:focus {
+	/*margin-left:1000em;*/ 
+	margin-left: 10000px;
+	/*width:10em;*/ 
+	width: 100%;
+	background-color: #ffffff;
+}
+#bloc-menu ul.level_1 li li li a:focus {
+	/*margin-left: 2010em; */
+	margin-left: 20360px;
+	/*width: 10em;*/
+	width: 100%; 
+	background-color: #ffffff;
+}
+#bloc-menu ul.level_1 li:hover a:focus, 
+#bloc-menu ul.level_1 li.sfhover a.sffocus { 
+	margin-left: 0; 
+}
+#bloc-menu ul.level_1 li li:hover a:focus + ul, 
+#bloc-menu ul.level_1 li li.sfhover a.sffocus + ul { 
+	/*margin-left: 10em;*/
+	 /*margin-left: 14em;*/
+	 margin-left: 180px;
+}
+
+
+
+
+/********** responsive **********/
+
+.navbar-toggle-tabmenu .navbar-toggle:before {
+    content: "Menu";
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    margin-left: -78px;
+    position: absolute;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #7F8384;
+}

@@ -1,0 +1,410 @@
+@CHARSET "ISO-8859-1";
+
+/*********************** Styles relatifs au site Balises ***********************/
+
+/* surcharge styles font BPI */
+.bodywrapper a,
+.bodywrapper .N1, .bodywrapper .N1 a,
+.bodywrapper .N3, .bodywrapper .N3 a,
+.bodywrapper .N4, .bodywrapper .N4 a,
+.bodywrapper .N6, .bodywrapper .N6 a {
+	color: #34bf0e;
+}
+
+.bodywrapper .chapeau {
+	color: #00417f;
+}
+
+.bodywrapper a:hover {
+	color: #34bf0e !important;
+}
+.bodywrapper a:hover {
+	background-image: url("../img/lien-interne_balises.png");
+}
+
+.bodywrapper a[target="_blank"]:hover {
+	background-image: url("../img/lien-externe_balises.png");
+}
+
+.bodywrapper .lien-voir-plus:after {
+	background-image: url("../img/lien_balises.png");
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+/* navbar */
+.navbar .navbar-sites .navbar-nav > li.active {
+	background-image: url("../img/coin-sm_balises.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+.navbar .navbar-sites .navbar-nav > li.active a {
+	color: #35c00d;
+}
+
+/* menu */
+#bouton-menu-responsive {
+	border-color: #35c00d;
+}
+
+#bouton-menu-responsive .icon-bar {
+	background-color: #35c00d;
+}
+
+#bouton-menu-responsive.collapsed {
+	border-color: #000000;
+}
+
+#bouton-menu-responsive.collapsed .icon-bar {
+	background-color: #000000;
+}
+
+.navigation > .navbarBPI > ul.navmenu > li.selected > a {
+	color: #35c00d;
+	background-image: url("../img/coin-md_balises.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+#bloc-menu a:hover,
+#bloc-menu li.sfhover > a,
+#bloc-menu a:focus {
+	color: #35c00d !important;
+}
+
+#bloc-menu ul.level_1 > li.selected > a {
+	color: #35c00d;
+	background-image: url("../img/coin-md_balises.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+/* logo */
+header.entete-site .logo {
+	margin-left: 40px;
+}
+
+/* breadcrumb */
+/*#barre-flottante {
+	padding-bottom: 47px;
+}
+
+#barre-flottante.barre-flottante-active {
+	padding-bottom: 0;
+}*/
+
+/* plan-sites */
+footer.footer-site .plan-sites h1.site-courant {	
+	background-image: url("../img/coin-sm_balises.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+footer.footer-site .plan-sites h1.site-courant, .plan-sites h1.site-courant a {
+	color: #35c00d;	
+}
+
+
+/* vue-carre + vue-ligne */
+.home .vue-carre,
+.home .vue-ligne {
+	background-image: url("../img/bordure-md_balises.png");
+	background-position: center top;
+	background-repeat: repeat-x;
+}
+
+.home .vue-carre {
+	height: 555px;
+	margin-bottom: 55px;
+}
+
+.home .vue-carre h1,
+.home .vue-carre h1 a {
+	color: #000000;
+}
+
+
+.home .tc-derniere-contribution .vue-carre {
+	margin-bottom: 0;
+	height: auto;
+} 
+
+/* vue-bloc */
+.vue-bloc,
+.home .vue-bloc {
+	background-image: url("../img/bordure-md_balises.png");
+	background-position: center top;
+	background-repeat: repeat-x;
+}
+
+.vue-slider .vue-bloc,
+.home .vue-slider .vue-bloc {
+	background-image: none;
+}
+
+.home .alpha .vue-bloc {
+	background-image: none;
+	margin-top: 0;
+	padding-top: 0;
+	height: 522px;
+	margin-bottom: 40px;
+}
+
+.vue-bloc .prefixe-titre,
+.vue-bloc .prefixe-titre a {
+	color: #35c00d;
+}	
+
+.vue-bloc h1,
+.vue-bloc h1 a {
+	color: #35c00d;
+}
+
+
+.home > .contenu-site > div + div > .row > .col-md-4 > .vue-bloc h1,
+.home > .contenu-site > div + div > .row > .col-md-4 > .vue-bloc h1 a {
+	color: #000000;
+}
+
+.vue-bloc.urgent {
+    color: #35c00d;	
+	background-image: url("../img/bordure-lg-urgent.png");
+	background-position: center top;
+	background-repeat: repeat-x;
+}
+
+.vue-bloc.urgent > article {
+	border-bottom: solid 1px #35c00d;
+	background-image: url("../img/coin-lg_balises.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+.vue-slider {
+	margin-top: 0;
+}
+
+.vue-slider-home {
+	margin-bottom: 0;
+}
+
+.home .vue-slider .vue-bloc {
+	height: 492px;	
+}
+
+.home .vue-slider .vue-bloc-contenu {
+	height: 492px;
+}
+
+.bodywrapper > section {
+	padding-top: 47px;
+}
+
+/* carousel */
+.home .carousel-inner {
+	height: 522px;
+}
+
+
+.carousel-indicators li {
+	background-color: #ffffff;
+	border: solid 1px #34bf0e;
+}
+
+.carousel-indicators li.active {
+	background-color: #34bf0e;
+	border: solid 1px #34bf0e;
+}
+
+ .home .carousel-inner .vue-bloc-visuel {
+ 	float: right; 
+ }
+ 
+ /* liste-breves */
+ .home .liste-tc-breve {
+ 	border-left: solid 1px #32bf0e;
+ 	border-bottom: solid 1px #32bf0e;
+ 	padding-left: 15px;
+ 	padding-bottom: 0;
+ 	margin-bottom: 60px;
+ }
+ 
+ .home .liste-tc-breve .vue-bloc {
+	background-image: none;
+	padding-top: 40px;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: auto;
+}
+
+.home .liste-tc-breve .vue-bloc.alpha {
+	padding-top: 0;
+}
+
+.home .liste-tc-breve .liste-tc-breve-contenu {	
+	background-image: url("../img/coin-xl_balises.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	padding-bottom: 70px;
+}
+
+.home .liste-tc-breve .vue-bloc .visuel {
+	position: relative;
+	display: none;
+}
+
+/* liste-tc-dossier */
+.home .liste-tc-dossier.liste-vue-bloc {
+	background-image: url("../img/bordure-md_balises.png");
+	background-position: center top;
+	background-repeat: repeat-x;
+	padding-top: 50px;
+	margin-bottom: 60px;
+}
+
+.home .liste-tc-dossier .vue-bloc {
+	border-top: solid 1px #000000;
+	background-image: none;
+	margin-bottom: 40px;
+	height: auto;
+}
+
+.home .liste-tc-dossier .vue-bloc.alpha {
+	margin-top: 0;
+	border-top: 0;
+}
+
+.home .liste-tc-dossier-contenu {
+	background-image: url("../img/bordure-md_balises.png");
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	padding-bottom: 40px;
+}
+
+/*.home .liste-tc-dossier .vue-ligne:first-child,
+.home .liste-tc-dossier .vue-ligne.alpha {
+	border-top: 0;
+}*/
+
+/* liste-divers */
+.home .liste-divers {
+	background-image: url("../img/bordure-md_balises.png");
+	background-position: center top;
+	background-repeat: repeat-x;	
+}
+
+.home .liste-divers .vue-carre {
+	background-image: none;	
+	margin-top: 0;
+}
+
+/* form */
+form .form-control:hover,
+form .zone .form-control:hover {
+	border-color: #34bf0e;
+}
+
+form .form-control:focus,
+form .zone .form-control:focus {
+	border-color: #000000;
+}
+
+.bodywrapper .btn-primary {
+	background-color: #34bf0e;
+}
+
+.bodywrapper .btn:focus,
+.bodywrapper .btn:hover,
+.bodywrapper .btn-primary:focus,
+.bodywrapper .btn-primary:hover {
+	background-color: #30e000;
+}
+.zone label:hover,
+.zone label:focus {
+	color: #32bf0e;
+}
+
+.zone-radio input[type="radio"]:hover + label:before,
+.zone-radio input[type="radio"]:focus + label:before,
+.zone-checkbox input[type="checkbox"]:hover + label:before,
+.zone-checkbox input[type="checkbox"]:focus + label:before {
+	border-color: #32bf0e;
+}
+
+.zone-radio input[type="radio"] + label:after,
+.zone-checkbox input[type="checkbox"] + label:after {
+	background-color: #32bf0e;
+}
+
+/* .page-filtrage */
+.page-filtrage .options-filtre {
+	/*color: #ffffff;
+	background-color: #32bf0e;*/	
+}
+
+.page-filtrage .options-filtre a,
+.page-filtrage .options-filtre {
+	/*color: #ffffff;*/
+}
+
+/* le coin des lecteurs */
+.coin-lecteurs .plus-consultes,
+.coin-lecteurs .plus-consultes.alpha,
+.liste-tc-article-plus-consulte > header,
+.liste-tc-article-plus-consulte .tc-article-plus-consulte .vue-lien-general {
+	/*border-color: #32bf0e;*/
+}
+
+
+.bodywrapper .liste-tc-article-plus-consulte .vue-lien-general,
+.bodywrapper .liste-tc-article-plus-consulte .vue-lien-general .N6,
+.bodywrapper .liste-tc-article-plus-consulte .vue-lien-general .N7,
+.bodywrapper .liste-tc-article-plus-consulte h1,
+.bodywrapper .liste-tc-article-plus-consulte .vue-lien-general a /*,
+.bodywrapper .liste-tc-article-plus-consulte .vue-lien-general a:hover*/ {
+	color: #34bd0b;
+}
+
+/* accueil thematique */
+.tc-zone-thematique h1 {
+	background-image: url("../img/zone-thematique-titre_balises.png");
+}
+
+/* tc-evt */
+.liste-evt-presse .tc-evt.vue-ligne:first-child,
+.liste-evt-presse .tc-evt.vue-ligne.alpha {
+    background-image: url("../img/bordure-md_balises.png");
+    background-position: center top;
+    background-repeat: repeat-x;
+}
+
+/* tags */
+.bodywrapper .tags .tag80,
+.bodywrapper .tags .tag90,
+.bodywrapper .tags .tag100 {
+    color: #34bf0e;
+}
+
+/* recherche */
+section.resultats-recherche {
+	background-image: url("../img/bordure-md_balises.png");
+	background-position: center top;
+	background-repeat: repeat-x;
+}
+
+/* responsive specifique site Balises */
+@media (max-width: 767px) {		
+	header.entete-site .logo {
+		margin-left: 0;
+	}
+	
+	#bloc-menu a.actif {
+		color: #35c00d;
+	}
+	
+	.js #bloc-menu ul.level_1 > li > ul {
+		border-top: solid 1px #35c00d;
+	}
+}

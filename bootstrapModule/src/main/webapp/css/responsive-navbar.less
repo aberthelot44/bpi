@@ -1,0 +1,153 @@
+// TABLETS AND BELOW
+// -----------------
+@media (max-width: 979px) {
+
+  // UNFIX THE TOPBAR
+  // ----------------
+  // Remove any padding from the body
+  .bodywrapper {
+    padding-top: 0;
+  }
+  // Unfix the navbar
+  .bodywrapper .navbar-fixed-top,
+  .bodywrapper .navbar-fixed-bottom {
+    position: static;
+  }
+  .bodywrapper .navbar-fixed-top {
+    margin-bottom: @baseLineHeight;
+  }
+  .bodywrapper .navbar-fixed-bottom {
+    margin-top: @baseLineHeight;
+  }
+  .bodywrapper .navbar-fixed-top .navbar-inner,
+  .bodywrapper .navbar-fixed-bottom .navbar-inner {
+    padding: 5px;
+  }
+  .bodywrapper .navbar .container {
+    width: auto;
+    padding: 0;
+  }
+  // Account for brand name
+  .bodywrapper .navbar .brand {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 0 0 -5px;
+  }
+
+  // COLLAPSIBLE NAVBAR
+  // ------------------
+  // Nav collapse clears brand
+  .bodywrapper .nav-collapse {
+    clear: both;
+  }
+  // Block-level the nav
+  .bodywrapper .nav-collapse .nav {
+    float: none;
+    margin: 0 0 (@baseLineHeight / 2);
+  }
+  .bodywrapper .nav-collapse .nav > li {
+    float: none;
+  }
+  .bodywrapper .nav-collapse .nav > li > a {
+    margin-bottom: 2px;
+  }
+  .bodywrapper .nav-collapse .nav > .divider-vertical {
+    display: none;
+  }
+  .bodywrapper .nav-collapse .nav .nav-header {
+    color: @navbarText;
+    text-shadow: none;
+  }
+  // Nav and dropdown links in navbar
+  .bodywrapper .nav-collapse .nav > li > a,
+  .bodywrapper .nav-collapse .dropdown-menu a {
+    padding: 6px 15px;
+    font-weight: bold;
+    color: @navbarLinkColor;
+    .border-radius(3px);
+  }
+  // Buttons
+  .bodywrapper .nav-collapse .btn {
+    padding: 4px 10px 4px;
+    font-weight: normal;
+    .border-radius(4px);
+  }
+  .bodywrapper .nav-collapse .dropdown-menu li + li a {
+    margin-bottom: 2px;
+  }
+  .bodywrapper .nav-collapse .nav > li > a:hover,
+  .bodywrapper .nav-collapse .dropdown-menu a:hover {
+    background-color: @navbarBackground;
+  }
+  // Buttons in the navbar
+  .bodywrapper .nav-collapse.in .btn-group {
+    margin-top: 5px;
+    padding: 0;
+  }
+  // Dropdowns in the navbar
+  .bodywrapper .nav-collapse .dropdown-menu {
+    position: static;
+    top: auto;
+    left: auto;
+    float: none;
+    display: block;
+    max-width: none;
+    margin: 0 15px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    .border-radius(0);
+    .box-shadow(none);
+  }
+  .bodywrapper .nav-collapse .dropdown-menu:before,
+  .bodywrapper .nav-collapse .dropdown-menu:after {
+    display: none;
+  }
+  .bodywrapper .nav-collapse .dropdown-menu .divider {
+    display: none;
+  }
+  // Forms in navbar
+  .bodywrapper .nav-collapse .navbar-form,
+  .bodywrapper .nav-collapse .navbar-search {
+    float: none;
+    padding: (@baseLineHeight / 2) 15px;
+    margin: (@baseLineHeight / 2) 0;
+    border-top: 1px solid @navbarBackground;
+    border-bottom: 1px solid @navbarBackground;
+    .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1)");
+  }
+  // Pull right (secondary) nav content
+  .bodywrapper .navbar .nav-collapse .nav.pull-right {
+    float: none;
+    margin-left: 0;
+  }
+  // Hide everything in the navbar save .brand and toggle button */
+  .bodywrapper .nav-collapse,
+  .bodywrapper .nav-collapse.collapse {
+    overflow: hidden;
+    height: 0;
+  }
+  // Navbar button
+  .bodywrapper .navbar .btn-navbar {
+    display: block;
+  }
+
+  // STATIC NAVBAR
+  // -------------
+  .bodywrapper .navbar-static .navbar-inner {
+    padding-left:  10px;
+    padding-right: 10px;
+  }
+}
+
+
+// DEFAULT DESKTOP
+// ---------------
+
+// Required to make the collapsing navbar work on regular desktops
+@media (min-width: 980px) {
+  .bodywrapper .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
+}

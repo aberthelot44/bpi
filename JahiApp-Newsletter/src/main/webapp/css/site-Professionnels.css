@@ -1,0 +1,319 @@
+@CHARSET "ISO-8859-1";
+
+/*********************** Styles relatifs au site Pro ***********************/
+
+/* surcharge styles font BPI */
+.bodywrapper a,
+.bodywrapper .N1, .bodywrapper .N1 a,
+.bodywrapper .N3, .bodywrapper .N3 a,
+.bodywrapper .N4, .bodywrapper .N4 a,
+.bodywrapper .N6, .bodywrapper .N6 a {
+	color: #009edf;
+}
+
+.bodywrapper .chapeau {
+	color: #00417f;
+}
+
+.bodywrapper a:hover {
+	color: #009edf !important;
+}
+
+.bodywrapper a:hover {
+	background-image: url("../img/lien-interne_pro.png");
+}
+
+.bodywrapper a[target="_blank"]:hover {
+	background-image: url("../img/lien-externe_pro.png");
+}
+
+.bodywrapper .lien-voir-plus:after {
+	background-image: url("../img/lien_pro.png");
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+/* navbar */
+.navbar .navbar-sites .navbar-nav > li.active {
+	background-image: url("../img/coin-sm_pro.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+.navbar .navbar-sites .navbar-nav > li.active a {
+	color: #009edf;
+}
+	
+/* menu */
+#bouton-menu-responsive {
+	border-color: #009edf;
+}
+
+#bouton-menu-responsive .icon-bar {
+	background-color: #009edf;
+}
+
+#bouton-menu-responsive.collapsed {
+	border-color: #000000;
+}
+
+#bouton-menu-responsive.collapsed .icon-bar {
+	background-color: #000000;
+}
+
+.navigation > .navbarBPI > ul.navmenu > li.selected > a {
+	color: #009edf;
+	background-image: url("../img/coin-md_pro.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+#bloc-menu a:hover,
+#bloc-menu li.sfhover > a,
+#bloc-menu a:focus {
+	color: #009edf !important;
+}		
+
+#bloc-menu ul.level_1 > li.selected > a {
+	color: #009edf;
+	background-image: url("../img/coin-md_pro.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+/* plan-sites */
+footer.footer-site .plan-sites h1.site-courant {	
+	background-image: url("../img/coin-sm_pro.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+footer.footer-site .plan-sites h1.site-courant, .plan-sites h1.site-courant a {
+	color: #009edf;	
+}
+
+/* carousel */
+.carousel-inner {	
+	background-color: #009ee0;
+	
+	height: 340px;
+	margin: 0;
+	padding: 0;
+}
+
+.carousel-inner,
+.carousel-inner a,
+.carousel-inner h1,
+.carousel-inner h1 a,
+.carousel-inner .prefixe-titre,
+.carousel-inner .prefixe-titre a {
+	color: #ffffff;
+}
+
+.carousel-inner .vue-bloc-contenu {
+	margin-top: 15px;
+	padding-left: 0;
+	padding-right: 30px; 
+}
+
+.carousel-indicators li {
+	background-color: #ffffff;
+	border: solid 1px #009de0;
+}
+
+.carousel-indicators li.active {
+	background-color: #009de0;
+	border: solid 1px #009ee0;
+}
+
+/* vue-bloc */
+.vue-bloc,
+.home .vue-bloc {
+	background-image: url("../img/bordure-md_pro.png");
+	background-position: center top;
+	background-repeat: repeat-x;
+}
+
+.vue-bloc .prefixe-titre,
+.vue-bloc .prefixe-titre a {
+	color: #009edf;
+}	
+
+.vue-bloc h1,
+.vue-bloc h1 a {
+	color: #009edf;
+}
+
+.vue-bloc.urgent {
+    color: #009edf;	
+	background-image: url("../img/bordure-md-urgent.png");
+	background-position: center top;
+	background-repeat: repeat-x;
+}
+
+.vue-bloc.urgent > article  {
+	border-bottom: solid 1px #009ee0;
+	background-image: url("../img/coin-lg_pro.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+.home .vue-slider .vue-bloc-contenu {
+	height: 325px;
+}
+
+.home .vue-slider .vue-bloc-contenu:after {
+	background-image: url("../img/coupure-pied_pro.png");
+	background-position: left top;
+	background-repeat: repeat-x;
+}
+
+/* tc-mise-en-avant */
+.tc-mise-en-avant {
+	background-image: url("../img/bordure-md_pro.png");
+	background-position: center top;
+	background-repeat: repeat-x;
+}
+
+/* tc-fiche-pratique */ 
+.home .liste-fiche-pratique {
+	border: solid 1px #c4c4c4;
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.home .liste-fiche-pratique .liste-fiche-pratique-contenu {	
+	border-left: solid 1px #c4c4c4;
+}
+
+.home .liste-fiche-pratique .liste-fiche-pratique-contenu.alpha {	
+	border-left: 0;
+}
+
+.home .liste-fiche-pratique .tc-fiche-pratique {
+	border: 0;
+	background-image: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: auto;
+}
+
+
+
+/* polices N1 à N8 */
+.carousel .carousel-inner,
+.carousel .carousel-inner a,
+.carousel .carousel-inner .N1, 
+.carousel .carousel-inner .N2,
+.carousel .carousel-inner .N3, 
+.carousel .carousel-inner .N4, 
+.carousel .carousel-inner .N5, 
+.carousel .carousel-inner .N6, 
+.carousel .carousel-inner .N7, 
+.carousel .carousel-inner .N8  {
+	color: #FFFFFF;
+}
+	
+.tc-mise-en-avant .N1 {
+	color: #000000;
+}
+
+/* form */
+form .form-control:hover,
+form .zone .form-control:hover {
+	border-color: #009edf;
+}
+
+form .form-control:focus,
+form .zone .form-control:focus {
+	border-color: #000000;
+}
+
+.bodywrapper .btn-primary {
+	background-color: #009edf;
+}
+
+.bodywrapper .btn:focus,
+.bodywrapper .btn:hover,
+.bodywrapper .btn-primary:focus,
+.bodywrapper .btn-primary:hover {
+	background-color: #00b5ff;
+}
+
+.zone label:hover,
+.zone label:focus {
+	color: #009edf;
+}
+
+.zone-radio input[type="radio"]:hover + label:before,
+.zone-radio input[type="radio"]:focus + label:before,
+.zone-checkbox input[type="checkbox"]:hover + label:before,
+.zone-checkbox input[type="checkbox"]:focus + label:before {
+	border-color: #009edf;
+}
+
+.zone-radio input[type="radio"] + label:after,
+.zone-checkbox input[type="checkbox"] + label:after {
+	background-color: #009edf;
+}
+
+/* .page-filtrage */
+.page-filtrage .options-filtre {
+	/*color: #ffffff;
+	background-color: #009edf;*/	
+}
+
+.page-filtrage .options-filtre a,
+.page-filtrage .options-filtre {
+	/*color: #ffffff;*/
+}
+
+/* le coin des lecteurs */
+.coin-lecteurs .plus-consultes,
+.coin-lecteurs .plus-consultes.alpha,
+.liste-tc-article-plus-consulte > header,
+.liste-tc-article-plus-consulte .tc-article-plus-consulte .vue-lien-general {
+	/*border-color: #009edf;*/
+}
+
+.bodywrapper .liste-tc-article-plus-consulte .vue-lien-general,
+.bodywrapper .liste-tc-article-plus-consulte .vue-lien-general .N6,
+.bodywrapper .liste-tc-article-plus-consulte .vue-lien-general .N7,
+.bodywrapper .liste-tc-article-plus-consulte h1,
+.bodywrapper .liste-tc-article-plus-consulte .vue-lien-general a /*,
+.bodywrapper .liste-tc-article-plus-consulte .vue-lien-general a:hover*/ {
+	color: #009edf;
+}
+
+/* tc-evt */
+.liste-evt-presse .tc-evt.vue-ligne:first-child,
+.liste-evt-presse .tc-evt.vue-ligne.alpha {
+    background-image: url("../img/bordure-md_pro.png");
+    background-position: center top;
+    background-repeat: repeat-x;
+}
+
+/* tags */
+.bodywrapper .tags .tag80,
+.bodywrapper .tags .tag90,
+.bodywrapper .tags .tag100 {
+    color: #009edf;
+}
+
+/* recherche */
+section.resultats-recherche {
+	background-image: url("../img/bordure-md_pro.png");
+	background-position: center top;
+	background-repeat: repeat-x;
+}
+
+/* responsive specifique site Pro */
+@media (max-width: 767px) {
+	#bloc-menu a.actif {
+		color: #009edf;
+	}
+	
+	.js #bloc-menu ul.level_1 > li > ul {
+		border-top: solid 1px #009edf;
+	}
+}
